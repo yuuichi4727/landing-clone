@@ -36,9 +36,6 @@
   .hide-on-tablet {
     display: none;
   }
-  .section__photo > img {
-    width: 100%;
-  }
 }
 
 /* mobile */
@@ -46,8 +43,13 @@
   .show-on-mobile {
     display: block;
   }
-
   .hide-on-mobile {
     display: none;
+  }
+  .navbar__list-wrapper {
+    width: 100%;
+  }
+  .action__btn {
+    margin: 0 4px;
   }
 }

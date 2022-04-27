@@ -3,7 +3,7 @@
 }
 
 .to__top-btn {
-    bottom: 15px;
+  bottom: 15px;
 }
 
 .navbar__list-icon {
@@ -11,7 +11,6 @@
 }
 
 .navbar__list-wrapper {
-  display: none;
   position: fixed;
   z-index: 2;
   right: 0;
@@ -19,13 +18,11 @@
   height: 100%;
   background-color: var(--primary);
   transition: all 0.4s ease 0s;
-  transform: translateX(250px);
+  transform: translateX(100%);
 }
 
 .navbar__list-wrapper.active {
-  display: block;
   transform: translateX(0);
-
 }
 
 .navbar__list {
@@ -97,7 +94,17 @@
 }
 
 .portfolio__item {
+  cursor: pointer;
   position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio__item:hover {
+  transform: scale(0.8);
+}
+
+.portfolio__item:hover .portfolio__text-container {
+  background-color: rgba(29, 128, 159, 0.8)
 }
 
 .portfolio__text-container {
@@ -110,6 +117,8 @@
   bottom: 0;
   z-index: 1;
   color: var(--white);
+  transition: all 0.3s ease-in-out;
+
 }
 
 .portfolio__text-item {
@@ -136,6 +145,10 @@
 .portfolio__img {
   width: 100%;
   height: auto;
+}
+
+.action__btn {
+  margin-right: 24px;
 }
 
 .map__container > img {
