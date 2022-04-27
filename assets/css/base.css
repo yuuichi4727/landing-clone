@@ -1,0 +1,114 @@
+:root {
+  --white: #fff;
+  --primary: #1d809f;
+  --secondary: #155d74;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.fixed-btn {
+  position: fixed;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.fixed-btn:hover {
+  background: #343a40;
+  color: var(--white);
+}
+
+.btn {
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn.btn-info {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn.btn-info:hover {
+  background-color: var(--secondary);
+}
+
+.bg__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg__texts > h1 {
+  font-size: 88px;
+  font-weight: 700;
+}
+
+.bg__texts > h2 {
+  font-size: 56px;
+  font-weight: 700;
+  max-width: 480px;
+}
+
+.bg__texts > h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.bg__btn {
+  margin-top: 48px;
+}
+
+.content__section {
+  padding: 120px 0;
+}
+
+.content__title > h2 {
+  font-weight: 700;
+}
+
+.content__title > h3 {
+  color: #ecb807;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 800;
+}
